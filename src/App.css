@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+}
+.App {
+  background-color: #111;
+}
+
 /* git add .
-git commit -m "folders cleaned"
+git commit -m "general style added"
 git push */
