@@ -1,6 +1,6 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
 import "./Footer.css";
 
 const Footer = () => {
@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="footer-outer-container">
         <div className="footer-inner-container">
           <div className="footer-icons">
-            <FacebookIcon className="icon-spacing" />
-            <InstagramIcon className="icon-spacing" />
-            <YouTubeIcon className="icon-spacing" />
+            <FaFacebook className="icon-spacing" />
+            <FaSquareInstagram className="icon-spacing" />
+            <FaYoutube className="icon-spacing" />
           </div>
 
           <div className="footer-data">
