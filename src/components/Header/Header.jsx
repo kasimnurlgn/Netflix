@@ -1,16 +1,15 @@
 import React from "react";
 import logo from "../../Assets/images/netflix.png";
 import "./Header.css";
-import SearchIcon from "@mui/icons-material/Search";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { IoSearchOutline } from "react-icons/io5";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { MdOutlineAccountBox } from "react-icons/md";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 function Header() {
   return (
     <div>
       <div className="header-outer-container">
-      
         <div className="header-container">
           <div className="header-left">
             <ul>
@@ -23,22 +22,22 @@ function Header() {
               <li>Movies</li>
               <li>Latest</li>
               <li>My List</li>
-              <li>Browse by Language</li>
+              <li>Browse by Languages</li>
             </ul>
           </div>
           <div className="header-right">
             <ul>
               <li>
-                <SearchIcon />
+                <IoSearchOutline />
               </li>
               <li>
-                <NotificationsNoneIcon />
+                <IoMdNotificationsOutline />
               </li>
               <li>
-                <AccountBoxIcon />{" "}
+                <MdOutlineAccountBox />
               </li>
               <li>
-                <ArrowDropDownIcon />
+                <IoMdArrowDropdown />
               </li>
             </ul>
           </div>
