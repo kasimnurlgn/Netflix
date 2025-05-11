@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 .app {
   background-color: #111;
 }
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   --font-base: "lexend", sans-serif;
   --font-second-base: "inter", sans-serif;
@@ -19,5 +19,5 @@ body {
 }
 
 /* git add .
-git commit -m "footer style added"
+git commit -m "Layout page added"
 git push */
