@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import requests from "../../api/requests.jsx";
-import axios from "../../api/axios.jsx";
+import instance from "../../api/axios.jsx";
 import "./Banner.css";
 const Banner = () => {
   let truncate = (text, maxLength) => {
@@ -10,7 +10,7 @@ const Banner = () => {
   useEffect(() => {
     (async () => {
       try {
-        let request = await axios.get(requests.fetchNetflixOriginals);
+        let request = await instance.get(requests.fetchNetflixOriginals);
         console.log(request);
         setMovie(
           request.data.results[
