@@ -1,5 +1,5 @@
 .banner {
-    height: 80vh; /* Full viewport height */
+    height: 80vh;
     margin-top: 0; /* Remove negative top margin */
     margin-bottom: 0; /* Remove negative bottom margin */
     color: white;
@@ -80,8 +80,8 @@
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
     .banner-contents {
-      align-items: center; /* Center align for smaller screens */
-      text-align: center; /* Center text for smaller screens */
+      align-items: center; 
+      text-align: center; 
     }
   
     .banner-title {
