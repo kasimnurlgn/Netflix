@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import RowList from "../../components/Rows/RowList/RowList";
 import Banner from "../../components/Banner/Banner";
 import Layout from "../Layout/Layout";
 const Home = () => {
@@ -8,6 +7,7 @@ const Home = () => {
     <>
       <Layout>
         <Banner />
+        <RowList/>
       </Layout>
     </>
   );

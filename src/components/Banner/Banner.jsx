@@ -6,7 +6,9 @@ const Banner = () => {
   let truncate = (text, maxLength) => {
     return text?.length > maxLength ? text.slice(0, maxLength) + "..." : text;
   };
+
   let [movie, setMovie] = useState({});
+
   useEffect(() => {
     (async () => {
       try {
@@ -22,6 +24,7 @@ const Banner = () => {
       }
     })();
   }, []);
+
   return (
     <div
       className="banner"
@@ -29,7 +32,6 @@ const Banner = () => {
         backgroundSize: "cover",
         backgroundImage: `URL("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="banner-contents">
