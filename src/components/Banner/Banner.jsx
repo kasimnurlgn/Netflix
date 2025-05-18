@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 import requests from "../../api/requests.jsx";
 import instance from "../../api/axios.jsx";
 import "./Banner.css";
+
 const Banner = () => {
-  let truncate = (text, maxLength) => {
-    return text?.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+
+
+  let truncate = (overview, maxLength) => {
+    return overview?.length > maxLength ? overview.slice(0, maxLength) + "..." : overview;
   };
 
   let [movie, setMovie] = useState({});
-
+  
   useEffect(() => {
     (async () => {
       try {
@@ -36,7 +39,7 @@ const Banner = () => {
     >
       <div className="banner-contents">
         <h1 className="banner-title">
-          {movie?.title || movie?.name || movie.original_name}
+          {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner-buttons">
           <button className="banner-button play">Play</button>
