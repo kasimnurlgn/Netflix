@@ -15,7 +15,6 @@
   box-sizing: border-box;
 }
 body {
-  background: #111;
   background: var(--bg-color);
   font-family: var(--font-second-base); /* or --font-base */
 }

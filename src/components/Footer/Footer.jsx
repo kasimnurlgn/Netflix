@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="service-code">
             <p className="code-box">Service Code</p>
           </div>
-          <div className="copy-right"> &copy; 1997-2024 Netflix, inc.</div>
+          <div className="copy-right">Netflix Clone &copy; 2025 | Kasim Nurlgn</div>
         </div>
       </div>
     </div>
