@@ -29,16 +29,16 @@ function Header() {
           <div className="header-right">
             <ul>
               <li>
-                <IoSearchOutline />
+                <IoSearchOutline size={25} />
               </li>
               <li>
-                <IoMdNotificationsOutline />
+                <IoMdNotificationsOutline size={25} />
               </li>
               <li>
-                <MdOutlineAccountBox />
+                <MdOutlineAccountBox size={25} />
               </li>
               <li>
-                <IoMdArrowDropdown />
+                <IoMdArrowDropdown size={25} />
               </li>
             </ul>
           </div>
