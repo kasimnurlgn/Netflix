@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="footer-outer-container">
         <div className="footer-inner-container">
           <div className="footer-icons">
-            <FaFacebook className="icon-spacing" />
-            <FaSquareInstagram className="icon-spacing" />
-            <FaYoutube className="icon-spacing" />
+            <FaFacebook className="icon-spacing" size={30} />
+            <FaSquareInstagram className="icon-spacing" size={30} />
+            <FaYoutube className="icon-spacing" size={30} />
           </div>
 
           <div className="footer-data">
