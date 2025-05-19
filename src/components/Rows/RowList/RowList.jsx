@@ -1,21 +1,18 @@
 import Row from "../Row/Row";
-import requests from "../../../api/requests";
+
+import rowData from "../Row.js";
 
 const RowList = () => {
   return (
     <>
-      <Row
-        title="NETFLIX ORIGINALS"
-        fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow={true}
-      />
-      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
-      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
-      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
-      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="TV Shows" fetchUrl={requests.fetchTvShows} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      {rowData.map((data, index) => (
+        <Row
+          key={index}
+          title={data.title}
+          fetchUrl={data.fetchUrl}
+          isLargeRow={data.isLargeRow}
+        />
+      ))}
     </>
   );
 };

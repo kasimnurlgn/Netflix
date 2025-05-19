@@ -3,7 +3,6 @@ import "./Row.css";
 import instance from "../../../api/axios";
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
-
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   let [movies, setMovie] = useState([]);
   let [trailerUrl, settrailerUrl] = useState("");
